@@ -1,0 +1,131 @@
+.box {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #51a179;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(73, 4, 4, 0.1);
+}
+
+.box h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#form-section {
+  margin-bottom: 30px;
+}
+
+#form-section label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#form-section input,
+#form-section textarea,
+#form-section select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #1d0e0e;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+#form-section button {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #02180a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+#form-section button:hover {
+  background-color: #357ab8;
+}
+
+#list-section h2 {
+  margin-bottom: 10px;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-item {
+  padding: 10px;
+  border: 1px solid #0f0808;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.project-item button {
+  padding: 6px 12px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.project-item .edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.project-item .edit-button:hover {
+  background-color: #868e3e;
+}
+
+.project-item .delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.project-item .delete-button:hover {
+  background-color: #f80505;
+}
+
+@media screen and (max-width: 600px) {
+  .box {
+    padding: 15px;
+    margin: 15px;
+  }
+
+  #form-section input,
+  #form-section textarea,
+  #form-section select {
+    padding: 8px;
+  }
+
+  .project-item {
+    font-size: 0.9rem;
+  }
+
+  .project-item {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  #project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and (min-width: 901px) {
+  #project-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+}
