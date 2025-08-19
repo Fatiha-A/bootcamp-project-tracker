@@ -8,27 +8,34 @@ A simple CRUD web app built with Node.js + Express (backend) and HTML/CSS/JS (fr
 
 ```
 bootcamp-project-tracker/
-│── backend/
+│
+├── backend/
+│   ├── config/
+│   │   └── envConfig.js          # loads and exports env variables
+│   │
 │   ├── controllers/
-│   │   └── projectController.js   # Handles request logic
+│   │   └── projectController.js  # handles request/response logic
+│   │
 │   ├── data/
-│   │   └── projectData.js         # In-memory array (mock DB)
+│   │   └── projectData.js        # in-memory project list
+│   │
 │   ├── routes/
-│   │   └── projectRoutes.js       # API endpoints
+│   │   └── projectRoutes.js      # defines express routes
+│   │
 │   ├── services/
-│   │   └── projectService.js      # Business logic
-│   ├── server.js                  # Express app entry point
-│   └── .env                       # Environment variables (PORT, APP_NAME)
-│   │──node_modules/
-│   │──package-lock.json
-│   │──package.json
+│   │   └── projectService.js     # business logic for projects
+│   │
+│   ├── .env                      # environment variables (PORT, APP_NAME)
+│   ├── server.js                 # main backend entry
+│   └── package.json
 │
-│── frontend/
-│   ├── index.html                 # UI
-│   ├── style.css                  # Styles
-│   └── app.js                     # Frontend logic (fetch API, DOM updates)
+├── frontend/
+│   ├── index.html                # main html
+│   ├── app.js                    # frontend js (fetch + crud ui)
+│   ├── style.css                 # frontend styles
 │
-│── README.md
+└── README.md                     # project info
+
 ```
 
 ---
@@ -85,20 +92,22 @@ Simply open `frontend/index.html` in your browser (or serve with Live Server in 
 
 ## 🖼️ UI Screenshots
 
-**Home Page:**  
-![Home Page](screenshots/home.png)
+Home Page
+<img width="1319" height="611" alt="home" src="https://github.com/user-attachments/assets/e55be0ae-bfd5-4c65-87a7-24689f0cbe9b" />
 
-**Edit Project:**  
-![Edit Project](screenshots/edit-project.png)
+Add project
+<img width="2926" height="2288" alt="Nest-Hub-Max" src="https://github.com/user-attachments/assets/62757e7f-d1fa-49c4-9981-471166f352c8" />
 
-**Delete Project:**  
-![Delete Project](screenshots/delete-project.png)
+Edit Project
+<img width="1333" height="608" alt="edit-project" src="https://github.com/user-attachments/assets/0afb5528-2edf-4b00-a82b-1dd5f5173c72" />
 
-**Responsive Design1:**  
-![Responsive-ipad](screenshots/responsive-ipad.png)
+Delete Project
+<img width="1347" height="679" alt="delete-project" src="https://github.com/user-attachments/assets/f882d504-82f1-4a9a-9d4f-d57d72be6823" />
 
-**Responsive Design:**  
-![Responsive](screenshots/responsive.png)
+Responsive Design
+<img width="1410" height="2862" alt="iPhone6_7_8 Plus" src="https://github.com/user-attachments/assets/999f6ba3-11df-4528-a988-0572171c3334" />
+
+<img width="308" height="440" alt="responsive-ipad" src="https://github.com/user-attachments/assets/236f4d8a-913d-4904-bd04-0a08b63a0821" />
 
 ---
 

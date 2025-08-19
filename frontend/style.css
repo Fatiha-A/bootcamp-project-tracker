@@ -1,10 +1,17 @@
+body {
+  margin: 0px auto;
+  padding: 0px;
+  color: black;
+  background-color: hwb(126 87% 9% / 0);
+}
+
 .box {
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
   background-color: #51a179;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(73, 4, 4, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(73, 4, 4, 0.349);
 }
 
 .box h1 {
@@ -31,6 +38,8 @@
   border: 1px solid #1d0e0e;
   border-radius: 12px;
   box-sizing: border-box;
+  font-size: 0.9rem;
+  font-weight: 400;
 }
 
 #form-section button {
@@ -63,6 +72,8 @@
   border: 1px solid #0f0808;
   border-radius: 12px;
   background-color: #fff;
+  font-size: 0.9rm;
+  font-weight: 400;
 }
 
 .project-item button {

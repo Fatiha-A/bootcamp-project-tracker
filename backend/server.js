@@ -1,23 +1,28 @@
-require("dotenv").config();
-
+// import dependencies
 const express = require("express");
-const cors = require("cors"); //depenenies
+const cors = require("cors");
 
+// import routes
 const projectRoutes = require("./routes/projectRoutes");
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+// import config values (port and app name)
+const { PORT, APP_NAME } = require("./config/envConfig");
 
-//middleware
+const app = express();
+
+// middleware
 app.use(cors());
 app.use(express.json());
 
+// routes
 app.use("/api/projects", projectRoutes);
 
+// default route
 app.get("/", (req, res) => {
-  res.send(`${process.env.APP_NAME} is running`);
+  res.send(`${APP_NAME} is running`);
 });
 
+// start server
 app.listen(PORT, () => {
-  console.log(`${process.env.APP_NAME} listening on port ${PORT}`);
+  console.log(`${APP_NAME} listening on port ${PORT}`);
 });

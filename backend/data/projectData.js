@@ -1,3 +1,4 @@
+//To store projects in-memory array
 let projects = [
   {
     id: 1,
