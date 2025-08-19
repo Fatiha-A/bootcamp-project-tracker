@@ -88,6 +88,30 @@ Simply open `frontend/index.html` in your browser (or serve with Live Server in 
 | PUT    | /api/projects/\:id | Update existing project |
 | DELETE | /api/projects/\:id | Delete a project        |
 
+
+---
+
+## 🖼️ UI Screenshots
+
+Home Page
+<img width="1319" height="611" alt="home" src="https://github.com/user-attachments/assets/e55be0ae-bfd5-4c65-87a7-24689f0cbe9b" />
+
+Add project
+<img width="2926" height="2288" alt="Nest-Hub-Max" src="https://github.com/user-attachments/assets/62757e7f-d1fa-49c4-9981-471166f352c8" />
+
+Edit Project
+<img width="1333" height="608" alt="edit-project" src="https://github.com/user-attachments/assets/0afb5528-2edf-4b00-a82b-1dd5f5173c72" />
+
+Delete Project
+<img width="1347" height="679" alt="delete-project" src="https://github.com/user-attachments/assets/f882d504-82f1-4a9a-9d4f-d57d72be6823" />
+
+Responsive Design
+<img width="1410" height="2862" alt="iPhone6_7_8 Plus" src="https://github.com/user-attachments/assets/999f6ba3-11df-4528-a988-0572171c3334" />
+
+<img width="308" height="440" alt="responsive-ipad" src="https://github.com/user-attachments/assets/236f4d8a-913d-4904-bd04-0a08b63a0821" />
+
+---
+
 ## 📱 Responsive Design
 
 - ✅ Desktop → Grid view (3 columns)
